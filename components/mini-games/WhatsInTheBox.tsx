@@ -1334,8 +1334,8 @@ export default function WhatsInTheBox({
           "
         >
           {language === "EN"
-            ? "77 possible items. Most of them are completely unnecessary."
-            : "ของทั้งหมด 77 อย่าง และส่วนใหญ่ไม่มีประโยชน์อะไรเลย"}
+            ? "111 possible items. Most of them are completely unnecessary."
+            : "ของทั้งหมด 111 อย่าง และส่วนใหญ่ไม่มีประโยชน์อะไรเลย"}
         </p>
       </header>
 
@@ -1553,7 +1553,7 @@ export default function WhatsInTheBox({
                       text-white/20
                     "
                   >
-                    <span>BOX.077</span>
+                    <span>BOX.111</span>
                     <span>RNG</span>
                   </div>
                 </motion.div>

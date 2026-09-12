@@ -48,145 +48,147 @@ const DATA = {
       "Results are randomly generated. Your future is probably safe.",
 
     jobs: [
-      "You have the potential to work in technology, but your biggest challenge may be starting before the deadline.",
-      "Your career is heading toward something creative, especially if you stop opening new tabs every time work gets difficult.",
-      "You are surprisingly good at solving problems, especially the ones you accidentally created yourself.",
-      "A new project may appear in your future, and you will probably say yes before fully understanding what you agreed to.",
-      "You have the potential to become an important person in your team, mainly because you know where all the files are.",
-      "Your career looks promising, although your productivity seems to activate only when the deadline becomes dangerous.",
-      "You may discover that you are better at your job than you originally thought, probably after making several questionable decisions.",
-      "Your future career involves creativity, technology, and at least one moment where you ask yourself what you are doing with your life.",
-      "You are likely to work on something you genuinely enjoy, but you may complain about it anyway because that is part of the process.",
-      "Your professional life will improve dramatically once you stop saying “I will do it later.”",
-      "You have leadership potential, but first you need to learn how to lead yourself away from distractions.",
-      "A future opportunity may look intimidating at first, but accepting it could turn out to be one of your better decisions.",
-      "You are capable of doing impressive things, provided that you actually finish the things you start.",
-      "Your career path may not be perfectly planned, but somehow you will keep finding your way forward.",
-      "You may become the person everyone asks for help, despite secretly searching for the answer yourself.",
-      "Your work life will contain many unexpected problems, but solving them will make you considerably better at what you do.",
-      "You have a strong chance of building something you can be proud of, especially if you stop comparing your progress with everyone else.",
-      "Your future job may involve computers, creativity, or both. Either way, you will probably spend too much time staring at a screen.",
-      "You will eventually find work that fits you better, but getting there may require a few failed attempts first.",
-      "Your biggest career advantage is your ability to keep going even after something completely refuses to work.",
-      "You are entering a period where learning new skills could open more doors than you expect.",
-      "Your career will probably improve after you realize that perfection is just another form of procrastination.",
-      "A surprisingly useful skill you learn casually today may become important to your career later.",
-      "You may change your career direction more than once, and that does not necessarily mean you are lost.",
-      "Your future contains at least one project that starts as “just for fun” and becomes much more serious than expected.",
-      "You have the potential to do great work, but your future self would appreciate you starting now.",
-      "Your career may move slowly at first, but consistency will eventually become your biggest advantage.",
-      "Someone may notice your work sooner than you expect, so perhaps finish it before they arrive.",
-      "Your professional future looks better than your current motivation suggests.",
-      "You are probably closer to becoming good at something than you think. Keep practicing.",
+      "มีเกณฑ์ได้เลื่อนตำแหน่ง แต่ต้องเลื่อนตัวเองออกจากเตียงให้ได้ก่อน",
+      "หัวหน้ามองเห็นศักยภาพคุณ ส่วนคุณมองเห็นวันหยุด",
+      "งานช่วงนี้ไม่มีอะไรน่าเป็นห่วง นอกจากงานที่ยังไม่ทำ",
+      "คุณมีความสามารถพิเศษในการทำงาน 1 ชั่วโมง ภายในเวลา 5 ชั่วโมง",
+      "มีเกณฑ์ได้ทำงานที่ไม่อยู่ใน Job Description เพราะจักรวาลอยากเพิ่ม DLC ให้ชีวิต",
+      "โปรเจกต์ใหม่กำลังมา และคุณจะตอบว่า ‘ได้ครับ’ ก่อนรู้ว่าต้องทำอะไร",
+      "คุณมีแววเป็นคนสำคัญของทีม เพราะเป็นคนเดียวที่รู้ว่าไฟล์อยู่ไหน",
+      "ผลงานคุณกำลังจะโดดเด่น เพียงแต่อย่าปล่อยให้ Deadline เด่นกว่าก็พอ",
+      "มีเกณฑ์ประชุมเยอะขึ้น เพื่อคุยกันว่าเดี๋ยวค่อยประชุมอีกที",
+      "อนาคตการงานสดใส แต่ Productivity ของคุณทำงานเป็นกะ",
+      "คุณเก่งกว่าที่คิด ปัญหาคือคุณชอบทดสอบขีดจำกัดตัวเองตอนใกล้ส่ง",
+      "มีเกณฑ์ได้คำชมจากหัวหน้า แล้วตามด้วยคำว่า ‘ฝากงานเพิ่มนิดนึง’",
+      "คุณอาจได้เป็นหัวหน้าสักวัน แต่ตอนนี้ลองเป็นหัวหน้าตัวเองก่อน",
+      "งานที่ง่ายตอนแรกมีโอกาสกลายเป็น Side Quest 17 ขั้นตอน",
+      "คุณมีโอกาสประสบความสำเร็จสูง โดยเฉพาะถ้าเปิดไฟล์งานก่อนเปิด YouTube",
+      "มีเกณฑ์ค้นพบพรสวรรค์ใหม่ และพรสวรรค์นั้นคือการแก้ปัญหาที่ตัวเองทำพัง",
+      "อนาคตจะมีโปรเจกต์ที่เริ่มจาก ‘ทำเล่น ๆ’ แล้วจบด้วยการไม่ได้นอน",
+      "คุณจะได้เรียนรู้สิ่งใหม่ ๆ และพูดว่า ‘รู้งี้เริ่มตั้งนานแล้ว’",
+      "มีโอกาสได้ทำงานที่ชอบ แต่ก็ยังบ่นได้ เพราะคุณเป็นมนุษย์",
+      "ความก้าวหน้ากำลังมาแบบช้า ๆ เหมือน Wi-Fi ตอนฝนตก",
+      "คุณมี Leadership Potential แต่ตอนนี้ทีมที่ยากที่สุดคือทีมตัวเอง",
+      "มีเกณฑ์งานเข้าแบบไม่ต้องสมัคร เพราะงานเห็นคุณแล้ววิ่งเข้าหาเอง",
+      "คุณจะกลายเป็นคนที่เพื่อนร่วมงานถามว่า ‘อันนี้ทำยังไง’ ทั้งที่เมื่อกี้คุณเพิ่ง Google มา",
+      "งานจะดีขึ้นทันทีเมื่อคุณหยุดพูดว่า ‘พรุ่งนี้ค่อยทำ’ ซึ่งพูดมาประมาณ 3 อาทิตย์แล้ว",
+      "มีโอกาสได้ทำอะไรเจ๋ง ๆ แต่ขั้นตอนแรกคือเลิกจัดโต๊ะเพื่อหนีงาน",
+      "อนาคตการงานดูดีมาก ส่วนปัจจุบันกำลังรอแรงบันดาลใจจาก Deadline",
+      "คุณมีโอกาสสร้างผลงานที่คนจำได้ หวังว่าจะจำเพราะความเก่งนะ",
+      "มีเกณฑ์ได้เปลี่ยนแผนการทำงานหลายครั้ง เพราะแผนแรกดูเหมือนเขียนตอนตีสอง",
+      "คุณกำลังเข้าใกล้คำว่า ‘เก่ง’ ขอแค่ไม่เลิกก่อนตอนเริ่มเก่ง",
+      "สรุปการงาน: มีอนาคตครับ แต่ช่วยเริ่มงานวันนี้ด้วย",
+    
     ],
 
     money: [
-      "Your finances are currently stable enough to survive, but perhaps not stable enough to justify another online purchase.",
-      "You have money, but somehow it keeps disappearing whenever you say, “This is the last thing I am buying.”",
-      "A little extra money may come your way, and you will immediately discover several excellent ways to spend it.",
-      "Your financial situation is not terrible. Your bank account simply has a different opinion.",
-      "You may save some money this month, assuming you can resist anything labeled “limited-time offer.”",
-      "Money will come into your life regularly, but unfortunately it appears to enjoy leaving just as quickly.",
-      "Your future contains a financial opportunity, but you will need to notice it before spending everything on snacks.",
-      "You are capable of becoming financially comfortable, but your current shopping habits are conducting an investigation against you.",
-      "Your wallet may feel lighter than usual, mostly because you keep buying things you absolutely did not need.",
-      "A future version of you will be grateful if you start saving a little money now.",
-      "Your finances may improve soon, especially if you stop treating every discount as a personal invitation.",
-      "You will probably receive some unexpected money, followed shortly by an unexpected reason to spend it.",
-      "Your financial future looks promising, although your ability to keep money is still under development.",
-      "You may reach a point where you have enough money to relax, but you will probably find something new to worry about.",
-      "Your income has potential to grow, but so does your talent for spending it.",
-      "The universe suggests saving money. Your online shopping history suggests otherwise.",
-      "You are not broke. You are simply participating in an advanced form of temporary wealth redistribution.",
-      "Your financial life will become more stable once you stop buying things just because they are slightly cheaper.",
-      "There is a good chance you will earn more in the future, but please do not immediately upgrade your entire lifestyle.",
-      "Your bank account may recover soon, provided you stop checking the same expensive product page every night.",
-      "You have enough financial potential to do well, but discipline will matter more than luck.",
-      "Your future includes a moment when you look at your balance and wonder where everything went. Again.",
-      "You may become surprisingly good at managing money once you finally decide that future-you also deserves some money.",
-      "A better financial period is possible, but it may begin with one very simple decision: do not buy it.",
-      "Your money situation will improve when your wants stop pretending to be needs.",
-      "You are likely to earn enough to enjoy life, but saving some of it would be a revolutionary idea.",
-      "Financial stability is within reach, although your cart currently contains several obstacles.",
-      "You may have more money than expected one day, but keeping it will be the real challenge.",
-      "Your future wallet looks healthier than your current one. Please try not to sabotage it.",
-      "The financial forecast is cautiously optimistic, with a high probability of unnecessary purchases.",
+      "มีเกณฑ์เงินเข้า แต่ดูทรงแล้วมันไม่ได้คิดจะอยู่นาน",
+      "ช่วงนี้การเงินคล่องตัวมาก เงินผ่านมือเร็วมาก",
+      "มีเกณฑ์รวย แต่ยังไม่ใช่เดือนนี้",
+      "เงินเดือนออกปุ๊บ คุณจะกลายเป็นคนมีเงินอยู่ประมาณ 6 ชั่วโมง",
+      "ดวงการเงินดีมาก โดยเฉพาะตอนคนอื่นเลี้ยง",
+      "จักรวาลบอกให้ประหยัด แต่ตะกร้าออนไลน์บอกว่า ‘เหลืออีก 2 ชิ้น’",
+      "มีโอกาสได้เงินก้อน แต่ก้อนนั้นอาจอยู่ในความฝัน",
+      "คุณไม่ได้จน คุณแค่มีเงินน้อยกว่าของที่อยากได้",
+      "การเงินกำลังฟื้นตัว กรุณาอย่าช่วยมันด้วยการกดสั่งซื้อ",
+      "มีเกณฑ์ได้เงินเพิ่ม และมีเกณฑ์หาเหตุผลใช้เพิ่มพร้อมกัน",
+      "กระเป๋าสตางค์คุณกำลังเข้าสู่โหมดประหยัดพลังงาน",
+      "เงินจะอยู่กับคุณได้นานขึ้น ถ้าคุณเลิกพูดว่า ‘ของมันต้องมี’",
+      "มีเกณฑ์เจอโปรดีมาก ซึ่งน่ากลัวตรงที่คุณจะซื้อเพราะโปร",
+      "บัญชีธนาคารยังมีชีวิตอยู่ แต่กำลังพักฟื้น",
+      "อนาคตการเงินสดใส ถ้าไม่นับค่าอาหารเดลิเวอรี",
+      "มีเงินเก็บได้แน่นอน เพียงแต่อาจต้องเก็บจากความอยากซื้อ",
+      "รายได้มีโอกาสโต ส่วน Wishlist ก็โตตามแบบไม่มีใครเชิญ",
+      "มีเกณฑ์เจอเงินที่คิดว่าหาย แล้วพบว่าตัวเองใช้ไปแล้ว",
+      "คุณมีพรสวรรค์ด้านการหาเงิน และมีพรสวรรค์อีกด้านในการหาเรื่องใช้มัน",
+      "เดือนนี้เหมาะกับการลงทุน โดยเฉพาะลงทุนกับการไม่ซื้อของที่ไม่จำเป็น",
+      "เงินก้อนต่อไปจะมาในเวลาที่คุณเริ่มคิดว่า ‘เอาวะ กินมาม่าก็ได้’",
+      "มีเกณฑ์ร่ำรวย แต่ระบบขอให้ผ่านด่าน ‘ห้ามกดสั่งตอนตีหนึ่ง’ ก่อน",
+      "การเงินจะดีขึ้นเมื่อคุณเลิกดูยอดเงินแล้วทำหน้าเหมือนเป็นเลขของคนอื่น",
+      "คุณไม่ได้ใช้เงินเก่ง คุณแค่มีความเร็วในการใช้เงินสูง",
+      "มีโอกาสเก็บเงินก้อนใหญ่ ถ้าก้อนนั้นไม่ถูกแปลงเป็นของแต่งโต๊ะก่อน",
+      "อนาคตคุณมีเงินมากขึ้นแน่ ๆ คำถามคือจะเหลือเท่าไร",
+      "ดวงการเงินบอกให้คิดก่อนซื้อ แต่โปรโมชั่นบอกให้คิดทีหลัง",
+      "เงินกำลังมา กรุณาอย่าวิ่งสวนมันด้วยการช้อปปิ้ง",
+      "สรุปการเงิน: หาได้ ใช้เป็น และเก็บไม่ค่อยทัน",
+    
     ],
 
     love: [
-      "Your love life is currently unclear, but someone's online status seems extremely clear.",
-      "Someone may be interested in you, although both of you appear to be waiting for the other person to text first.",
-      "A new relationship may appear in your future, but you will probably need to send the first message.",
-      "Your love life is like Wi-Fi: sometimes there is a strong signal, sometimes there is absolutely nothing.",
-      "You may meet someone you really like, but overthinking could become your greatest romantic enemy.",
-      "Someone from your past may return, but you will have to decide whether you miss the person or just the memories.",
-      "Your love life is not broken. It is simply loading more slowly than expected.",
-      "A meaningful conversation may happen soon, assuming you do not reply with “lol” and disappear.",
-      "Your heart is available, but it appears to be waiting for someone who knows what they are doing.",
-      "You may develop feelings for someone unexpectedly, which is exactly the kind of thing your brain did not schedule.",
-      "A future relationship could start from a completely ordinary conversation.",
-      "You have romantic potential, but your ability to communicate feelings is currently receiving mixed reviews.",
-      "Someone may enter your life at the most unexpected time, probably when you are not looking for anyone.",
-      "Your next relationship may begin slowly, but that could make it more meaningful.",
-      "You are likely to experience a romantic plot twist. The system refuses to reveal whether it is good or terrible.",
-      "There may be someone you want to talk to right now, but your courage seems to be experiencing a temporary outage.",
-      "Your love life could improve dramatically if you stop assuming that every unanswered message means the end of the world.",
-      "You may find someone who understands your weirdness, which is either romantic or slightly concerning.",
-      "Your future contains affection, awkward conversations, and at least one moment of pretending you are not nervous.",
-      "You might fall for someone who makes ordinary days feel unexpectedly interesting.",
-      "A relationship may appear when you finally stop trying to force one to happen.",
-      "Your heart is not late. It is simply following a different schedule.",
-      "There is a possibility that someone already likes you more than you realize.",
-      "Your romantic future looks better than your current message history suggests.",
-      "You may soon have a reason to check your phone more often than usual.",
-      "Someone could become important to you through a friendship that slowly turns into something more.",
-      "Your next romantic chapter may begin with a simple message that you almost decided not to send.",
-      "You are emotionally available in theory. In practice, the system is still running diagnostics.",
-      "Love is probably coming. Unfortunately, it did not provide an exact delivery date.",
-      "Your future relationship may be unexpectedly healthy, which might initially feel suspicious.",
+      "มีเกณฑ์มีแฟน แต่ยังไม่รู้ว่าเขาอยู่ไหน",
+      "มีคนชอบคุณอยู่ แต่เขาก็คิดว่าคุณมีแฟนแล้ว",
+      "ความรักกำลังไปได้ดี ถ้าไม่นับเรื่องที่ยังไม่มีใคร",
+      "มีเกณฑ์ได้คุยกับคนใหม่ และจบด้วยการเป็นคนดูสตอรี่กัน",
+      "คนที่ใช่อาจกำลังเข้ามา แต่คุณกำลังนอนอยู่",
+      "มีคนเข้ามาแน่นอน ส่วนจะใช่คนหรือเจ้ากรรมนายเวรยังไม่ทราบ",
+      "หัวใจคุณว่าง แต่พื้นที่เก็บความคิดมากเต็ม 100%",
+      "มีเกณฑ์ได้รับข้อความที่รอคอย ถ้าคุณหยุดเช็กมือถือทุก 12 วินาที",
+      "คนที่คุณชอบอาจชอบคุณเหมือนกัน ปัญหาคือทั้งคู่เก่งแต่ดูเชิง",
+      "ความรักช่วงนี้เหมือน Wi-Fi เห็นสัญญาณ แต่เชื่อมต่อไม่ได้",
+      "มีเกณฑ์เริ่มจากคำว่า ‘เพื่อน’ แล้วจบด้วยคำว่า ‘เอ้า แฟนเฉย’",
+      "คนใหม่กำลังมา แต่ดูเหมือน GPS ของเขาจะหลงทาง",
+      "มีโอกาสตกหลุมรัก แต่ระวังพื้นไม่ได้มีเบาะรอง",
+      "หัวใจพร้อมมาก สมองยังประชุมกันไม่เสร็จ",
+      "มีเกณฑ์คุยกับคนที่ทำให้ยิ้ม แต่ยังไม่รับประกันว่าจะตอบเร็ว",
+      "ความรักจะดีขึ้นถ้าคุณกล้าทักก่อน ไม่ใช่กดเข้าแชตแล้วออก",
+      "มีคนสนใจคุณอยู่ แต่อาจเป็นเพราะคุณหน้าตาดีตอนอยู่ไกล ๆ",
+      "คุณมีโอกาสได้แฟน แต่ต้องออกจากห้องก่อน",
+      "รักครั้งต่อไปอาจเกิดจากบทสนทนาธรรมดา ๆ เช่น ‘กินข้าวยัง’",
+      "มีเกณฑ์โดนจีบ แต่ระบบยังไม่เปิดเผยว่าใคร เพราะกลัวคุณเขิน",
+      "ความรักกำลังโหลด 73% กรุณาอย่าปิดแอป",
+      "มีเกณฑ์เจอคนถูกใจตอนที่คุณแต่งตัวธรรมดาที่สุด เพราะชีวิตชอบเล่นมุก",
+      "คนเก่าอาจกลับมา แต่ขอให้เช็กก่อนว่าเขากลับมาเพราะคิดถึงหรือเพราะเหงา",
+      "มีโอกาสมีโมเมนต์หวาน ๆ และคุณจะเอาไปเล่าให้เพื่อนฟังประมาณ 14 รอบ",
+      "รักครั้งนี้อาจไปได้ไกล ถ้าทั้งสองฝ่ายเลิกทำตัวเหมือนไม่สนใจ",
+      "คุณไม่ได้โสดเพราะไม่มีเสน่ห์ คุณโสดเพราะชอบรออีกฝ่ายเริ่ม",
+      "มีเกณฑ์ได้คุยกับคนที่ตรงสเปก แต่สเปกคุณเองก็อัปเดตทุกอาทิตย์",
+      "หัวใจมีพื้นที่ว่าง แต่เจ้าของห้องยังไม่เปิดรับสมัคร",
+      "มีโอกาสมีความสัมพันธ์ดี ๆ เข้ามา แบบที่คุณต้องเช็กหลายรอบว่า ‘นี่เรื่องจริงเหรอ’",
+      "สรุปความรัก: มีลุ้นครับ แต่ออกจากโหมดสังเกตการณ์ก่อน",
+    
     ],
 
     endings: [
-      "Your life is not going badly. It is simply running a slightly unstable beta version.",
-      "Everything looks fine. Suspiciously fine. The system recommends staying alert.",
-      "You have plenty of potential. The only remaining problem is actually using it.",
-      "Your life needs a software update, but the owner keeps clicking “Remind me later.”",
-      "The system detected a promising future with several unnecessary side quests.",
-      "Congratulations. You are now responsible for whatever build this turns into.",
-      "This build somehow passed QA. Nobody knows how, including QA.",
-      "Honestly, this is not the worst possible timeline.",
-      "Your future looks surprisingly expensive, but at least it looks interesting.",
-      "At least your website will probably look good.",
-      "The future is uncertain, but your ability to procrastinate appears extremely reliable.",
-      "Your life has a strong storyline. Unfortunately, the developer forgot to write the instructions.",
-      "The system predicts success, confusion, and several moments of saying “why did I do that?”",
-      "You may not become successful overnight, but you will definitely collect some excellent stories along the way.",
-      "Your future contains opportunities. Whether you notice them is currently classified information.",
-      "Life appears to be moving forward. The direction is still being calculated.",
-      "Your build has a few bugs, but removing all of them would probably make the game less interesting.",
-      "You are closer to your goals than you think, although your loading screen has been unusually long.",
-      "The system cannot guarantee success, but it can guarantee that giving up will not help.",
-      "Your future looks chaotic, but somehow the chaos seems to work for you.",
-      "You are entering a new chapter. Please save your progress before doing anything questionable.",
-      "The prediction is optimistic, but your sleep schedule may disagree.",
-      "Your life is becoming more interesting. Whether that is a good thing remains unresolved.",
-      "The system found no major problems. Minor problems are currently being ignored.",
-      "Your future has potential, personality, and a suspicious amount of unfinished projects.",
-      "You are not behind in life. You are simply taking a route with more unnecessary loading screens.",
-      "The next chapter may surprise you, especially if you stop trying to predict every possible outcome.",
-      "Your future self is probably proud of you. They would also appreciate it if you finished that project.",
-      "The system recommends confidence, patience, and slightly fewer questionable decisions.",
-      "Your life may not follow the original plan, but the alternative route could be better.",
-      "There is no perfect build. Yours just happens to be unusually entertaining.",
-      "The future is still editable. Please use this feature responsibly.",
-      "You have survived every bad day so far. Statistically, that is a pretty good record.",
-      "Your story is still being written. Try not to delete the whole project when one thing goes wrong.",
-      "The system predicts progress, provided that you continue moving instead of refreshing the page.",
-      "Your future is uncertain, but there is definitely more waiting for you than you can currently see.",
-      "This life build has potential. A few upgrades and some sleep should probably help.",
-      "You may not know exactly where you are going yet, but at least you are no longer standing still.",
-      "Final verdict: questionable decisions, decent potential, surprisingly promising future.",
-      "The simulation is complete. Somehow, you are still the main character.",
+      "ดวงโดยรวมดี ปัญหาคือเจ้าของดวง",
+      "ทุกอย่างจะดีขึ้น... มั้ง",
+      "ไม่ต้องเครียด ปุ่มนี้ก็สุ่มมา",
+      "ชีวิตไม่มีอะไรแน่นอน นอกจากเงินหมด",
+      "อนาคตสดใส ส่วนปัจจุบันขอไปนอนก่อน",
+      "ระบบตรวจพบว่าคุณยังเป็น Main Character อยู่ กรุณาใช้สิทธิ์ให้คุ้ม",
+      "คำทำนายจบแล้ว แต่ Side Quest ยังไม่จบ",
+      "คุณไม่ได้หลงทาง แค่ GPS ชีวิตกำลัง recalculating",
+      "ชีวิตคุณมี Plot Twist แน่นอน ส่วนจะดีหรือพัง รอแพตช์หน้า",
+      "ระบบไม่พบปัญหาร้ายแรง พบแต่ปัญหาที่คุณยังไม่เปิดอ่าน",
+      "อนาคตมีอนาคตครับ ฟังดูไม่ช่วยอะไร แต่จริง",
+      "คุณมี Potential สูงมาก กรุณาอย่าปล่อยให้มันเป็นแค่ Potential",
+      "ชีวิต Build นี้ผ่านครับ แต่ QA ขอไม่เซ็นรับรอง",
+      "คุณจะรอด แต่อาจรอดแบบงง ๆ",
+      "ทุกอย่างกำลังเข้าที่ เพียงแต่ของบางอย่างเข้าผิดที่",
+      "ระบบแนะนำให้มั่นใจในตัวเอง และอย่าตัดสินใจตอนตีสาม",
+      "อนาคตดีครับ แต่ต้องเลิกทำอะไรด้วยคำว่า ‘เอาวะ’ บ้าง",
+      "คุณมีโอกาสไปได้ไกล ถ้าขาไม่พาคุณไปเตียงก่อน",
+      "ชีวิตกำลังอัปเดต กรุณาอย่ากดปิดเครื่องกลางทาง",
+      "คำทำนายนี้แม่นประมาณหนึ่ง เพราะอีกส่วนหนึ่งเราสุ่ม",
+      "ระบบเห็นความสำเร็จอยู่ข้างหน้า แต่คุณต้องเดินไปเองนะครับ",
+      "อนาคตไม่ได้น่ากลัว ปัจจุบันต่างหากที่มีงานค้าง",
+      "คุณมีดวงดี แต่บางครั้งดวงก็ดีไม่ทันนิสัย",
+      "ชีวิตคุณเหมือนเกม Open World มีแผนที่ แต่ไม่รู้จะไปไหน",
+      "ระบบขอแนะนำให้พักผ่อน ก่อนที่สมองจะยื่นใบลาออก",
+      "คุณไม่ได้ช้า คุณแค่กำลังใช้ Route ที่มี Cutscene เยอะ",
+      "ทุกอย่างมีทางออก ยกเว้นคำถามว่า ‘วันนี้กินอะไรดี’",
+      "ดวงบอกว่าคุณจะเก่งขึ้นเรื่อย ๆ ถ้าเลิกกด Skip Tutorial",
+      "คุณยังมีเวลาอีกเยอะ แต่ Deadline ไม่ได้คิดแบบนั้น",
+      "อนาคตคุณดูดีมาก ขอแค่ปัจจุบันอย่าพังเพิ่ม",
+      "ระบบประเมินแล้ว: 10% ดวง 90% ต้องลุยเอง",
+      "ชีวิตอาจไม่เป็นไปตามแผน แต่แผนเดิมก็ดูเหมือนเขียนตอนง่วง",
+      "คุณกำลังจะได้เจอเรื่องดี ๆ และเรื่องที่เอาไปทำมีมได้",
+      "อนาคตยังแก้ไขได้ แต่กรุณา Backup ก่อน",
+      "คุณมีศักยภาพจะเป็นคนที่เก่งมาก เพียงแต่ตอนนี้ขอให้ลุกก่อน",
+      "ระบบพบความวุ่นวายเล็กน้อย ซึ่งน่าจะเป็นคุณเอง",
+      "ไม่ต้องรู้อนาคตทั้งหมดก็ได้ แค่รู้ว่าพรุ่งนี้ต้องทำอะไรก็พอ",
+      "ผลการทำนาย: น่าสงสัย แต่มีแวว",
+      "Simulation เสร็จแล้วครับ ผลลัพธ์ขึ้นอยู่กับคุณ... และโชค 555",
+    
     ],
   },
 
@@ -369,6 +371,8 @@ export default function LifeGenerator({
 }: Props) {
   const data = DATA[language];
 
+  const langCode = language === "TH" ? "th" : "en";
+
   const [result, setResult] =
     useState<ResultIndices | null>(null);
 
@@ -449,6 +453,7 @@ export default function LifeGenerator({
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      lang={langCode}
       className="flex h-full min-h-0 w-full max-w-full min-w-0 flex-col overflow-hidden"
     >
       {/* BACK */}
@@ -551,6 +556,7 @@ export default function LifeGenerator({
             label={data.labels.job}
             value={displayJob}
             active={loading}
+            lang={langCode}
           />
 
           <LifeSlot
@@ -558,6 +564,7 @@ export default function LifeGenerator({
             label={data.labels.money}
             value={displayMoney}
             active={loading}
+            lang={langCode}
           />
 
           <LifeSlot
@@ -565,6 +572,7 @@ export default function LifeGenerator({
             label={data.labels.love}
             value={displayLove}
             active={loading}
+            lang={langCode}
           />
         </div>
 
@@ -708,11 +716,13 @@ function LifeSlot({
   label,
   value,
   active,
+  lang,
 }: {
   number: string;
   label: string;
   value: string;
   active: boolean;
+  lang: "th" | "en";
 }) {
   return (
     <motion.div
@@ -727,17 +737,20 @@ function LifeSlot({
         duration: 0.22,
         repeat: active ? Infinity : 0,
       }}
+      lang={lang}
       className="
         life-slot
         relative
+        flex
         min-h-0
+        flex-col
         p-3
         sm:p-4
       "
     >
       {/* TOP */}
 
-      <div className="relative z-10 flex min-w-0 items-center justify-between gap-2">
+      <div className="relative z-10 flex min-w-0 shrink-0 items-center justify-between gap-2">
         <span
           className="
             min-w-0
@@ -762,9 +775,9 @@ function LifeSlot({
       <div
         className="
           flex
-          h-[calc(100%-35px)]
           min-h-0
           min-w-0
+          flex-1
           items-center
           justify-center
           overflow-hidden
@@ -795,16 +808,12 @@ function LifeSlot({
 
       <div
         className="
-          absolute
-          bottom-2
-          left-2.5
-          right-2.5
+          mt-2
           flex
           min-w-0
+          shrink-0
           items-center
           gap-2
-          sm:left-3
-          sm:right-3
         "
       >
         <span className="mini-micro shrink-0 text-[7px]">
