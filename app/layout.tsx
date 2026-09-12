@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Noto_Sans_Thai as NotoSansThai } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Noto_Sans_Thai as NotoSansThai,
+  Noto_Sans_Thai_Looped as NotoSansThaiLooped,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -18,6 +23,12 @@ const notoThai = NotoSansThai({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const notoThaiLooped = NotoSansThaiLooped({
+  variable: "--font-noto-thai-looped",
+  subsets: ["thai"],
+  weight: ["400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: "ARE_ED",
   description: "ARE_ED — Developer / Creator",
@@ -31,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="th">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${notoThai.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${notoThai.variable} ${notoThaiLooped.variable} antialiased`}
       >
         {children}
       </body>

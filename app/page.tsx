@@ -10,6 +10,8 @@ import Works from "@/components/Works";
 import About from "@/components/About";
 import IridescentBackground from "@/components/IridescentBackground";
 
+
+
 type IntroPhase = "loading" | "glitch" | "done";
 
 export default function Home() {
@@ -198,6 +200,8 @@ export default function Home() {
         </motion.div>
       )}
       
+      <div className="site-effects" />
+
       <Navbar
           language={language}
           onLanguageChange={() =>
@@ -238,6 +242,7 @@ export default function Home() {
         />
 
         <Works isEnglish={isEnglish} />
+
 
         <About isEnglish={isEnglish} />
 

@@ -210,6 +210,7 @@ export default function Hero({
                             ? "Play My Game ↗"
                             : "เล่นเกมของผม ↗"}
                     </a>
+                    
                 </motion.div>
             </div>
 

@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Reveal from "@/components/Reveal";
+import TechLightField from "@/components/TechLightField";
+
 
 type WorksProps = {
   isEnglish: boolean;
@@ -13,18 +15,63 @@ export default function Works({
   return (
     <section
       id="works"
-      className="relative overflow-hidden border-t border-white/10 bg-[#050505] px-6 py-24 text-white md:px-10 md:py-32"
+      className="
+        relative
+        overflow-hidden
+        border-t
+        border-white/10
+        bg-[#050505]
+        px-5
+        py-20
+        text-white
+        sm:px-6
+        md:px-10
+        md:py-32
+      "
     >
+      {/* BACKGROUND LIGHT SYSTEM */}
+      <TechLightField />
+      
       {/* GRID */}
       <div className="pointer-events-none absolute inset-0 tech-grid-dark opacity-40" />
 
       {/* IRIDESCENT */}
-      <div className="pointer-events-none absolute right-[-120px] top-[10%] h-96 w-96 rounded-full bg-gradient-to-br from-cyan-400/10 via-purple-500/15 to-pink-400/10 blur-3xl" />
+      <div
+        className="
+          pointer-events-none
+          absolute
+          right-[-120px]
+          top-[10%]
+          h-96
+          w-96
+          rounded-full
+          bg-gradient-to-br
+          from-cyan-400/10
+          via-purple-500/15
+          to-pink-400/10
+          blur-3xl
+        "
+      />
 
       <div className="relative z-10 mx-auto max-w-[1500px]">
-        {/* HEADER */}
+
+        {/* =========================================
+            HEADER
+        ========================================= */}
+
         <Reveal>
-          <div className="mb-14 flex items-end justify-between border-b border-white/10 pb-8">
+          <div
+            className="
+              mb-12
+              flex
+              items-end
+              justify-between
+              border-b
+              border-white/10
+              pb-8
+              md:mb-14
+            "
+          >
             <div>
               <div className="mb-5 flex items-center gap-4">
                 <span className="micro-text-light">
@@ -38,7 +85,16 @@ export default function Works({
                 </span>
               </div>
 
-              <h2 className="text-5xl font-semibold tracking-[-0.07em] md:text-7xl lg:text-8xl">
+              <h2
+                className="
+                  text-4xl
+                  font-semibold
+                  tracking-[-0.07em]
+                  sm:text-5xl
+                  md:text-7xl
+                  lg:text-8xl
+                "
+              >
                 {isEnglish
                   ? "Selected Works"
                   : "ผลงานบางส่วน"}
@@ -59,9 +115,16 @@ export default function Works({
           </div>
         </Reveal>
 
-        {/* CARDS */}
+        {/* =========================================
+            CARDS
+        ========================================= */}
+
         <div className="grid gap-4 md:grid-cols-2">
-          {/* UNITY */}
+
+          {/* =========================================
+              UNITY
+          ========================================= */}
+
           <Reveal>
             <motion.a
               href="https://play.unity.com/en/games/4051e925-9d49-4db8-803c-6ccbdbbe0707/best-game-ever-02"
@@ -73,22 +136,71 @@ export default function Works({
               transition={{
                 duration: 0.3,
               }}
-              className="group relative flex min-h-[320px] sm:min-h-[360px] flex-col overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#0a0a0a] p-7 md:p-9"
+              className="
+                system-card
+                group
+                relative
+                flex
+                min-h-[320px]
+                flex-col
+                overflow-hidden
+                rounded-[1.5rem]
+                border
+                border-white/10
+                bg-[#0a0a0a]
+                p-6
+                sm:min-h-[360px]
+                sm:p-7
+                md:p-9
+              "
             >
-              <div className="absolute inset-0 tech-grid-dark opacity-20" />
+              {/* CARD GRID */}
 
-              <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-gradient-to-br from-cyan-400/10 via-purple-500/25 to-pink-400/10 blur-3xl transition duration-700 group-hover:scale-125" />
+              <div className="system-grid pointer-events-none absolute inset-0 tech-grid-dark" />
 
-              <div className="relative flex h-full flex-col justify-between">
+              {/* CARD LIGHT */}
+
+              <div
+                className="
+                  pointer-events-none
+                  absolute
+                  -right-24
+                  -top-24
+                  h-80
+                  w-80
+                  rounded-full
+                  bg-gradient-to-br
+                  from-cyan-400/10
+                  via-purple-500/25
+                  to-pink-400/10
+                  blur-3xl
+                  transition
+                  duration-700
+                  group-hover:scale-125
+                "
+              />
+
+              {/* MOVING LIGHT LINE */}
+
+              <div className="system-line" />
+
+              {/* CONTENT */}
+
+              <div className="relative z-10 flex h-full flex-col justify-between">
+
+                {/* TOP */}
+
                 <div>
                   <div className="flex items-center justify-between">
+
                     <span className="micro-text-light">
                       01 / UNITY
                     </span>
 
-                    <span className="technical-symbol-light text-2xl">
+                    <span className="system-symbol technical-symbol-light text-2xl">
                       +
                     </span>
+
                   </div>
 
                   <h3 className="mt-8 text-3xl font-semibold tracking-tight md:text-4xl">
@@ -102,10 +214,14 @@ export default function Works({
                   </p>
                 </div>
 
+                {/* BOTTOM */}
+
                 <div>
+
                   <div className="mb-5 h-px bg-white/10" />
 
                   <div className="flex items-center justify-between">
+
                     <div className="flex gap-3 font-mono text-xs text-white/40">
                       <span>
                         {isEnglish
@@ -113,7 +229,9 @@ export default function Works({
                           : "โปรเจกต์แรก"}
                       </span>
 
-                      <span>·</span>
+                      <span>
+                        ·
+                      </span>
 
                       <span>
                         {isEnglish
@@ -125,25 +243,41 @@ export default function Works({
                     <span className="micro-text-light">
                       01 / 02
                     </span>
+
                   </div>
 
                   <div className="mt-8 flex items-center justify-between">
+
                     <span className="font-mono text-xs text-white/35">
                       ///
                     </span>
 
-                    <span className="flex gap-2">
+                    {/* SYSTEM ACTIVE */}
+
+                    <span className="system-active font-mono text-[9px] tracking-[0.2em] text-cyan-200/70">
+                      SYSTEM ACTIVE ↗
+                    </span>
+
+                    {/* DOTS */}
+
+                    <span className="system-dots flex gap-2">
                       <i className="h-1.5 w-1.5 bg-white/30" />
                       <i className="h-1.5 w-1.5 bg-white/20" />
                       <i className="h-1.5 w-1.5 bg-white/10" />
                     </span>
+
                   </div>
+
                 </div>
+
               </div>
             </motion.a>
           </Reveal>
 
-          {/* AI */}
+          {/* =========================================
+              AI
+          ========================================= */}
+
           <Reveal delay={0.12}>
             <motion.div
               whileHover={{
@@ -152,22 +286,71 @@ export default function Works({
               transition={{
                 duration: 0.3,
               }}
-              className="group relative flex min-h-[320px] sm:min-h-[360px] flex-col overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#0a0a0a] p-7 md:p-9"
+              className="
+                system-card
+                group
+                relative
+                flex
+                min-h-[320px]
+                flex-col
+                overflow-hidden
+                rounded-[1.5rem]
+                border
+                border-white/10
+                bg-[#0a0a0a]
+                p-6
+                sm:min-h-[360px]
+                sm:p-7
+                md:p-9
+              "
             >
-              <div className="absolute inset-0 tech-grid-dark opacity-20" />
+              {/* CARD GRID */}
 
-              <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-gradient-to-br from-cyan-300/10 via-purple-400/20 to-pink-300/10 blur-3xl transition duration-700 group-hover:scale-125" />
+              <div className="system-grid pointer-events-none absolute inset-0 tech-grid-dark" />
 
-              <div className="relative flex h-full flex-col justify-between">
+              {/* CARD LIGHT */}
+
+              <div
+                className="
+                  pointer-events-none
+                  absolute
+                  -right-24
+                  -top-24
+                  h-80
+                  w-80
+                  rounded-full
+                  bg-gradient-to-br
+                  from-cyan-300/10
+                  via-purple-400/20
+                  to-pink-300/10
+                  blur-3xl
+                  transition
+                  duration-700
+                  group-hover:scale-125
+                "
+              />
+
+              {/* MOVING LIGHT LINE */}
+
+              <div className="system-line" />
+
+              {/* CONTENT */}
+
+              <div className="relative z-10 flex h-full flex-col justify-between">
+
+                {/* TOP */}
+
                 <div>
                   <div className="flex items-center justify-between">
+
                     <span className="micro-text-light">
                       02 / WEB
                     </span>
 
-                    <span className="technical-symbol-light text-2xl">
+                    <span className="system-symbol technical-symbol-light text-2xl">
                       ×
                     </span>
+
                   </div>
 
                   <h3 className="mt-8 text-3xl font-semibold tracking-tight md:text-4xl">
@@ -181,10 +364,14 @@ export default function Works({
                   </p>
                 </div>
 
+                {/* BOTTOM */}
+
                 <div>
+
                   <div className="mb-5 h-px bg-white/10" />
 
                   <div className="flex items-center justify-between">
+
                     <span className="font-mono text-xs text-white/40">
                       {isEnglish
                         ? "Coming Soon..."
@@ -194,26 +381,42 @@ export default function Works({
                     <span className="micro-text-light">
                       02 / 02
                     </span>
+
                   </div>
 
                   <div className="mt-8 flex items-center justify-between">
+
                     <span className="font-mono text-xs text-white/35">
                       ///
+                    </span>
+
+                    {/* SYSTEM ACTIVE */}
+
+                    <span className="system-active font-mono text-[9px] tracking-[0.2em] text-red-200/70">
+                      SYSTEM INACTIVE ✕
                     </span>
 
                     <span className="font-mono text-xs tracking-[0.3em] text-white/20">
                       ···
                     </span>
+
                   </div>
+
                 </div>
+
               </div>
             </motion.div>
           </Reveal>
+
         </div>
 
-        {/* FOOTER DECORATION */}
+        {/* =========================================
+            FOOTER DECORATION
+        ========================================= */}
+
         <Reveal delay={0.2}>
           <div className="mt-10 flex items-center gap-5 border-t border-white/10 pt-5">
+
             <span className="micro-text-light">
               ARE_ED / WORKS
             </span>
@@ -230,8 +433,10 @@ export default function Works({
             <span className="micro-text-light">
               01 / 02
             </span>
+
           </div>
         </Reveal>
+
       </div>
     </section>
   );
