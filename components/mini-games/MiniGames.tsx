@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import LifeGenerator from "./LifeGenerator";
@@ -16,6 +16,26 @@ export default function MiniGames() {
 
   const [activeGame, setActiveGame] =
     useState<ActiveGame>("hub");
+
+  useEffect(() => {
+    if (activeGame !== "hub") return;
+
+    const isMobile = window.matchMedia("(max-width: 640px)").matches;
+    if (!isMobile) return;
+
+    const timer = window.setTimeout(() => {
+      const firstGameCard = document.querySelector(".mini-game-card");
+
+      if (firstGameCard) {
+        firstGameCard.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }
+    }, 350);
+
+    return () => window.clearTimeout(timer);
+  }, [activeGame]);
 
   const isEnglish = language === "EN";
 

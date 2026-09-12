@@ -36,7 +36,7 @@ type RawBoxItem = {
 };
 
 /* =========================================================
-   77 ITEMS
+   111 ITEMS
 ========================================================= */
 
 const ITEMS: RawBoxItem[] = [
@@ -1040,10 +1040,419 @@ const ITEMS: RawBoxItem[] = [
     descriptionTH:
       "สมบัติที่แท้จริงอยู่ในกล่องมาตลอด... และมันคือคุณ",
   },
+  {
+    nameEN: "RUBBER CHICKEN",
+    nameTH: "ไก่ยาง",
+    rarity: "COMMON",
+    valueEN: "25 THB",
+    valueTH: "25 บาท",
+    emoji: "🐔",
+    descriptionEN:
+      "A rubber chicken. It has seen things.",
+    descriptionTH:
+      "ไก่ยางหนึ่งตัว มันผ่านอะไรมาเยอะมาก",
+  },
+  {
+    nameEN: "LEFTOVER FRIES",
+    nameTH: "เฟรนช์ฟรายส์เหลือ",
+    rarity: "COMMON",
+    valueEN: "9 THB",
+    valueTH: "9 บาท",
+    emoji: "🍟",
+    descriptionEN:
+      "Cold, sad, and somehow still worth opening a box for.",
+    descriptionTH:
+      "เย็น ชืด และไม่รู้ทำไมถึงยังเอามาใส่กล่องได้",
+  },
+  {
+    nameEN: "SINGLE SPOON",
+    nameTH: "ช้อน 1 คัน",
+    rarity: "COMMON",
+    valueEN: "5 THB",
+    valueTH: "5 บาท",
+    emoji: "🥄",
+    descriptionEN:
+      "A spoon. Not the golden one. Calm down.",
+    descriptionTH:
+      "ช้อนธรรมดาครับ ไม่ใช่ช้อนทอง ใจเย็น",
+  },
+  {
+    nameEN: "REMOTE WITH NO TV",
+    nameTH: "รีโมตที่ไม่มีทีวี",
+    rarity: "COMMON",
+    valueEN: "8 THB",
+    valueTH: "8 บาท",
+    emoji: "📺",
+    descriptionEN:
+      "Controls absolutely nothing. Premium technology.",
+    descriptionTH:
+      "ควบคุมอะไรไม่ได้เลย เทคโนโลยีระดับพรีเมียม",
+  },
+  {
+    nameEN: "MISSING LEGO PIECE",
+    nameTH: "เลโก้ชิ้นที่หาย",
+    rarity: "COMMON",
+    valueEN: "1 THB",
+    valueTH: "1 บาท",
+    emoji: "🧱",
+    descriptionEN:
+      "You found it after 7 years. The set is gone.",
+    descriptionTH:
+      "เจอหลังจากหายไป 7 ปี แต่ชุดเลโก้ไม่มีแล้ว",
+  },
+  {
+    nameEN: "ONE BATTERY",
+    nameTH: "ถ่าน 1 ก้อน",
+    rarity: "COMMON",
+    valueEN: "6 THB",
+    valueTH: "6 บาท",
+    emoji: "🔋",
+    descriptionEN:
+      "You need two. Of course you do.",
+    descriptionTH:
+      "คุณต้องใช้สองก้อน แน่นอนว่ามันมีมาให้ก้อนเดียว",
+  },
+  {
+    nameEN: "EMPTY WALLET",
+    nameTH: "กระเป๋าตังค์ว่างเปล่า",
+    rarity: "COMMON",
+    valueEN: "0 THB",
+    valueTH: "0 บาท",
+    emoji: "👛",
+    descriptionEN:
+      "Technically a wallet. Financially, a horror story.",
+    descriptionTH:
+      "เป็นกระเป๋าตังค์ในทางเทคนิค แต่ในทางการเงินคือหนังสยองขวัญ",
+  },
+  {
+    nameEN: "ONE CHEETO",
+    nameTH: "ชีโตส 1 ชิ้น",
+    rarity: "COMMON",
+    valueEN: "2 THB",
+    valueTH: "2 บาท",
+    emoji: "🧀",
+    descriptionEN:
+      "The rarest snack in your room right now.",
+    descriptionTH:
+      "ขนมที่หายากที่สุดในห้องคุณตอนนี้",
+  },
+  {
+    nameEN: "FAKE MUSTACHE",
+    nameTH: "หนวดปลอม",
+    rarity: "UNCOMMON",
+    valueEN: "35 THB",
+    valueTH: "35 บาท",
+    emoji: "🥸",
+    descriptionEN:
+      "Instant +40 confidence. −20 social acceptance.",
+    descriptionTH:
+      "เพิ่มความมั่นใจทันที +40 แต่ความน่าเชื่อถือลด 20",
+  },
+  {
+    nameEN: "TINY TRAFFIC CONE",
+    nameTH: "กรวยจราจรจิ๋ว",
+    rarity: "UNCOMMON",
+    valueEN: "40 THB",
+    valueTH: "40 บาท",
+    emoji: "🚧",
+    descriptionEN:
+      "You have no road, but now you have authority.",
+    descriptionTH:
+      "ไม่มีถนน แต่ตอนนี้คุณมีอำนาจ",
+  },
+  {
+    nameEN: "MYSTERY REMOTE",
+    nameTH: "รีโมตปริศนา",
+    rarity: "UNCOMMON",
+    valueEN: "100 THB",
+    valueTH: "100 บาท",
+    emoji: "🎛️",
+    descriptionEN:
+      "There is definitely a device somewhere.",
+    descriptionTH:
+      "มีอุปกรณ์ที่ใช้กับมันได้แน่นอน... ที่ไหนสักแห่ง",
+  },
+  {
+    nameEN: "EMOTIONAL SUPPORT ROCK",
+    nameTH: "หินช่วยพยุงจิตใจ",
+    rarity: "UNCOMMON",
+    valueEN: "69 THB",
+    valueTH: "69 บาท",
+    emoji: "🪨",
+    descriptionEN:
+      "It listens better than most people.",
+    descriptionTH:
+      "มันรับฟังเก่งกว่าคนส่วนใหญ่",
+  },
+  {
+    nameEN: "SUSPICIOUSLY FANCY SOCK",
+    nameTH: "ถุงเท้าหรูเกินเหตุ",
+    rarity: "UNCOMMON",
+    valueEN: "199 THB",
+    valueTH: "199 บาท",
+    emoji: "🧦",
+    descriptionEN:
+      "One sock. Luxury has no explanation.",
+    descriptionTH:
+      "มีข้างเดียว แต่ความหรูไม่มีเหตุผล",
+  },
+  {
+    nameEN: "MYSTERY CREDIT CARD",
+    nameTH: "บัตรเครดิตปริศนา",
+    rarity: "UNCOMMON",
+    valueEN: "−500 THB",
+    valueTH: "−500 บาท",
+    emoji: "💳",
+    descriptionEN:
+      "It somehow already has a bill.",
+    descriptionTH:
+      "เปิดมาก็มีหนี้เลย ไม่ต้องรูด",
+  },
+  {
+    nameEN: "BANANA PHONE",
+    nameTH: "โทรศัพท์กล้วย",
+    rarity: "UNCOMMON",
+    valueEN: "999 THB",
+    valueTH: "999 บาท",
+    emoji: "🍌",
+    descriptionEN:
+      "It has no signal, but excellent vibes.",
+    descriptionTH:
+      "ไม่มีสัญญาณ แต่ Vibe ดีมาก",
+  },
+  {
+    nameEN: "NPC DIALOGUE CARD",
+    nameTH: "การ์ดบทพูด NPC",
+    rarity: "UNCOMMON",
+    valueEN: "120 THB",
+    valueTH: "120 บาท",
+    emoji: "🗨️",
+    descriptionEN:
+      "Use it whenever you have no idea what to say.",
+    descriptionTH:
+      "ใช้ได้เมื่อไม่รู้จะพูดอะไร เหมือน NPC",
+  },
+  {
+    nameEN: "SHOPPING CART WITH ONE ITEM",
+    nameTH: "รถเข็นที่มีของชิ้นเดียว",
+    rarity: "RARE",
+    valueEN: "450 THB",
+    valueTH: "450 บาท",
+    emoji: "🛒",
+    descriptionEN:
+      "You entered for one thing. You left with 47.",
+    descriptionTH:
+      "ตั้งใจซื้อของชิ้นเดียว สุดท้ายออกมา 47 ชิ้น",
+  },
+  {
+    nameEN: "THE LAST CHAIR",
+    nameTH: "เก้าอี้ตัวสุดท้าย",
+    rarity: "RARE",
+    valueEN: "1,200 THB",
+    valueTH: "1,200 บาท",
+    emoji: "🪑",
+    descriptionEN:
+      "Everyone wants it when the room gets crowded.",
+    descriptionTH:
+      "ของที่ทุกคนอยากได้ตอนห้องเต็ม",
+  },
+  {
+    nameEN: "MYSTERY FRIDGE",
+    nameTH: "ตู้เย็นปริศนา",
+    rarity: "RARE",
+    valueEN: "3,500 THB",
+    valueTH: "3,500 บาท",
+    emoji: "🧊",
+    descriptionEN:
+      "It contains one thing. You are not emotionally ready.",
+    descriptionTH:
+      "ข้างในมีของอยู่หนึ่งอย่าง แต่คุณยังไม่พร้อมรู้",
+  },
+  {
+    nameEN: "GOLDEN NAPKIN",
+    nameTH: "ทิชชู่ทองคำ",
+    rarity: "RARE",
+    valueEN: "999 THB",
+    valueTH: "999 บาท",
+    emoji: "🧻",
+    descriptionEN:
+      "Still just a napkin. An expensive napkin.",
+    descriptionTH:
+      "ยังเป็นทิชชู่เหมือนเดิม แค่แพงขึ้นมาก",
+  },
+  {
+    nameEN: "INFINITE SNACK BAG",
+    nameTH: "ถุงขนมไม่มีวันหมด",
+    rarity: "RARE",
+    valueEN: "4,444 THB",
+    valueTH: "4,444 บาท",
+    emoji: "🍿",
+    descriptionEN:
+      "You eat one. Another appears. This is dangerous.",
+    descriptionTH:
+      "กินหนึ่งชิ้น อีกชิ้นโผล่มา อันตรายต่อสุขภาพการเงิน",
+  },
+  {
+    nameEN: "WIFI ROUTER FROM 2050",
+    nameTH: "เราเตอร์จากปี 2050",
+    rarity: "EPIC",
+    valueEN: "50,000 THB",
+    valueTH: "50,000 บาท",
+    emoji: "📡",
+    descriptionEN:
+      "Ping is so low that time itself feels slower.",
+    descriptionTH:
+      "Ping ต่ำจนรู้สึกว่าเวลาช้าลง",
+  },
+  {
+    nameEN: "PORTABLE SUN",
+    nameTH: "พระอาทิตย์พกพา",
+    rarity: "EPIC",
+    valueEN: "999,999 THB",
+    valueTH: "999,999 บาท",
+    emoji: "☀️",
+    descriptionEN:
+      "Please do not put this in your backpack.",
+    descriptionTH:
+      "กรุณาอย่าใส่สิ่งนี้ไว้ในกระเป๋า",
+  },
+  {
+    nameEN: "PERSONAL CLOUD",
+    nameTH: "ก้อนเมฆส่วนตัว",
+    rarity: "EPIC",
+    valueEN: "88,888 THB",
+    valueTH: "88,888 บาท",
+    emoji: "☁️",
+    descriptionEN:
+      "It follows you everywhere. Your privacy is gone.",
+    descriptionTH:
+      "มันตามคุณไปทุกที่ ความเป็นส่วนตัวจบแล้ว",
+  },
+  {
+    nameEN: "TIME MACHINE BUT IT ONLY GOES TO MONDAY",
+    nameTH: "ไทม์แมชชีนที่ไปได้แค่วันจันทร์",
+    rarity: "EPIC",
+    valueEN: "12,345 THB",
+    valueTH: "12,345 บาท",
+    emoji: "⏰",
+    descriptionEN:
+      "Congratulations. You made time travel worse.",
+    descriptionTH:
+      "ยินดีด้วย คุณทำให้การเดินทางข้ามเวลาห่วยลง",
+  },
+  {
+    nameEN: "SELF-DRIVING SHOPPING CART",
+    nameTH: "รถเข็นเดินเอง",
+    rarity: "EPIC",
+    valueEN: "66,666 THB",
+    valueTH: "66,666 บาท",
+    emoji: "🛒",
+    descriptionEN:
+      "It knows what you want. Your bank account does not.",
+    descriptionTH:
+      "มันรู้ว่าคุณอยากได้อะไร แต่บัญชีธนาคารไม่เห็นด้วย",
+  },
+  {
+    nameEN: "PRIVATE PARKING SPOT ON THE MOON",
+    nameTH: "ที่จอดรถส่วนตัวบนดวงจันทร์",
+    rarity: "LEGENDARY",
+    valueEN: "1,000,000 THB",
+    valueTH: "1,000,000 บาท",
+    emoji: "🌕",
+    descriptionEN:
+      "Parking is free. Getting there is your problem.",
+    descriptionTH:
+      "จอดฟรี แต่เดินทางไปยังไงเป็นเรื่องของคุณ",
+  },
+  {
+    nameEN: "PERSONAL ELEPHANT",
+    nameTH: "ช้างส่วนตัว",
+    rarity: "LEGENDARY",
+    valueEN: "2,500,000 THB",
+    valueTH: "2,500,000 บาท",
+    emoji: "🐘",
+    descriptionEN:
+      "You wanted a pet. The universe misunderstood.",
+    descriptionTH:
+      "อยากได้สัตว์เลี้ยง แต่จักรวาลเข้าใจผิดไปหน่อย",
+  },
+  {
+    nameEN: "FERRARI KEY WITH NO FERRARI",
+    nameTH: "กุญแจ Ferrari ที่ไม่มีรถ",
+    rarity: "LEGENDARY",
+    valueEN: "999,999 THB",
+    valueTH: "999,999 บาท",
+    emoji: "🏎️",
+    descriptionEN:
+      "The key is real. The car is apparently your imagination.",
+    descriptionTH:
+      "กุญแจของจริง แต่รถอยู่ในจินตนาการ",
+  },
+  {
+    nameEN: "MANSION KEY",
+    nameTH: "กุญแจบ้านหลังใหญ่",
+    rarity: "LEGENDARY",
+    valueEN: "50,000,000 THB",
+    valueTH: "50,000,000 บาท",
+    emoji: "🏠",
+    descriptionEN:
+      "You own the key. The mansion is still loading.",
+    descriptionTH:
+      "คุณได้กุญแจแล้ว ส่วนบ้านกำลังโหลด",
+  },
+  {
+    nameEN: "PEPE",
+    nameTH: "Pepe",
+    rarity: "MYTHIC",
+    valueEN: "PRICELESS",
+    valueTH: "ประเมินค่าไม่ได้",
+    emoji: "🐸",
+    image: "/pepe.jpg",
+    descriptionEN:
+      "You did not pull Pepe. Pepe pulled you.",
+    descriptionTH:
+      "คุณไม่ได้สุ่มได้ Pepe แต่ Pepe เป็นคนสุ่มคุณ",
+  },
+  {
+    nameEN: "BLACK HOLE",
+    nameTH: "หลุมดำ",
+    rarity: "MYTHIC",
+    valueEN: "∞ THB",
+    valueTH: "∞ บาท",
+    emoji: "🕳️",
+    descriptionEN:
+      "It has already eaten the receipt. And possibly your future.",
+    descriptionTH:
+      "มันกินใบเสร็จไปแล้ว และอาจกินอนาคตคุณด้วย",
+  },
+  {
+    nameEN: "THE INTERNET",
+    nameTH: "อินเทอร์เน็ตทั้งโลก",
+    rarity: "ABSOLUTE",
+    valueEN: "∞ THB",
+    valueTH: "∞ บาท",
+    emoji: "🌐",
+    descriptionEN:
+      "Congratulations. You now have access to every argument ever.",
+    descriptionTH:
+      "ยินดีด้วย ตอนนี้คุณเข้าถึงทุกดราม่าบนโลกได้แล้ว",
+  },
+  {
+    nameEN: "THE MOON",
+    nameTH: "ดวงจันทร์",
+    rarity: "ABSOLUTE",
+    valueEN: "NOT FOR SALE",
+    valueTH: "ขายไม่ได้",
+    emoji: "🌕",
+    descriptionEN:
+      "Slightly used. Comes with tides.",
+    descriptionTH:
+      "ใช้งานมาแล้วนิดหน่อย แถมน้ำขึ้นน้ำลงให้ด้วย",
+  },
 ];
 
 /* =========================================================
-   RARITY LABEL
+   RARITY LABEL + DROP RATE
 ========================================================= */
 
 const RARITY_LABELS: Record<
@@ -1069,6 +1478,79 @@ const RARITY_LABELS: Record<
     MYTHIC: "ระดับมายา",
     ABSOLUTE: "เหนือกฎ",
   },
+};
+
+/*
+ * BASE DROP RATE
+ *
+ * รวม = 100%
+ *
+ * ถ้าเปิดแล้วไม่ได้ ABSOLUTE:
+ * ของหายากจะค่อย ๆ ได้รับ BOOST
+ *
+ * ถ้าได้ ABSOLUTE:
+ * pity จะ reset กลับเป็น 0
+ */
+const BASE_RATES: Record<Rarity, number> = {
+  COMMON: 60,
+  UNCOMMON: 20,
+  RARE: 10,
+  EPIC: 5,
+  LEGENDARY: 3,
+  MYTHIC: 1.5,
+  ABSOLUTE: 0.5,
+};
+
+const RARITY_ORDER: Rarity[] = [
+  "COMMON",
+  "UNCOMMON",
+  "RARE",
+  "EPIC",
+  "LEGENDARY",
+  "MYTHIC",
+  "ABSOLUTE",
+];
+
+/*
+ * คำนวณ Drop Rate ปัจจุบัน
+ *
+ * pity = จำนวนครั้งที่เปิดตั้งแต่ได้ ABSOLUTE ล่าสุด
+ *
+ * rarity ยิ่งสูง -> ได้ boost มากกว่า
+ * แล้ว normalize กลับให้รวม = 100%
+ */
+const getDropRates = (
+  pity: number
+): Record<Rarity, number> => {
+  const boosted: Record<Rarity, number> = {
+    ...BASE_RATES,
+  };
+
+  RARITY_ORDER.forEach((rarity, index) => {
+    if (index === 0) return;
+
+    const boost =
+      1 + pity * 0.08 * index;
+
+    boosted[rarity] =
+      BASE_RATES[rarity] * boost;
+  });
+
+  const total = RARITY_ORDER.reduce(
+    (sum, rarity) =>
+      sum + boosted[rarity],
+    0
+  );
+
+  return RARITY_ORDER.reduce(
+    (rates, rarity) => {
+      rates[rarity] =
+        (boosted[rarity] / total) * 100;
+
+      return rates;
+    },
+    {} as Record<Rarity, number>
+  );
 };
 
 /* =========================================================
@@ -1164,6 +1646,15 @@ export default function WhatsInTheBox({
     useState<number | null>(null);
 
   /*
+   * จำนวนครั้งที่เปิดตั้งแต่ได้ ABSOLUTE ล่าสุด
+   */
+  const [pityCount, setPityCount] =
+    useState(0);
+
+  const dropRates =
+    getDropRates(pityCount);
+
+  /*
    * ของที่กำลังแสดงผล
    * จะถูกสร้างใหม่ทุกครั้งที่ language เปลี่ยน
    */
@@ -1211,15 +1702,63 @@ export default function WhatsInTheBox({
     setResultIndex(null);
 
     window.setTimeout(() => {
-      const index = Math.floor(
-        Math.random() * ITEMS.length
-      );
+      /*
+       * 1) สุ่ม Rarity ก่อน
+       *    ตาม Drop Rate ปัจจุบัน
+       */
+      const currentRates =
+        getDropRates(pityCount);
+
+      let roll = Math.random() * 100;
+      let selectedRarity: Rarity =
+        "COMMON";
+
+      for (const rarity of RARITY_ORDER) {
+        roll -= currentRates[rarity];
+
+        if (roll <= 0) {
+          selectedRarity = rarity;
+          break;
+        }
+      }
 
       /*
-       * เก็บ index เท่านั้น
+       * 2) เมื่อได้ Rarity แล้ว
+       *    ค่อยสุ่ม Item ภายในหมวดนั้น
        */
+      const rarityItems = ITEMS
+        .map((item, index) => ({
+          item,
+          index,
+        }))
+        .filter(
+          ({ item }) =>
+            item.rarity === selectedRarity
+        );
 
-      setResultIndex(index);
+      const randomItem =
+        rarityItems[
+          Math.floor(
+            Math.random() *
+              rarityItems.length
+          )
+        ];
+
+      setResultIndex(randomItem.index);
+
+      /*
+       * ได้ ABSOLUTE = reset
+       *
+       * ไม่ได้ ABSOLUTE = pity +1
+       */
+      if (selectedRarity === "ABSOLUTE") {
+        setPityCount(0);
+      } else {
+        setPityCount(
+          (current) => current + 1
+        );
+      }
+
       setOpening(false);
     }, 1500);
   };
@@ -1292,51 +1831,164 @@ export default function WhatsInTheBox({
         className="
           mt-4
           shrink-0
-          text-center
         "
       >
         <div
           className="
-            mb-2
-            text-[10px]
-            font-medium
-            tracking-[0.2em]
-            text-black/35
-          "
-        >
-          ARE_ED&nbsp;&nbsp;//&nbsp;&nbsp;RANDOM BOX
-        </div>
-
-        <h1
-          className="
-            text-4xl
-            font-medium
-            tracking-[-0.055em]
-            text-black
-            sm:text-6xl
-            md:text-7xl
-          "
-        >
-          {language === "EN"
-            ? "What's in the Box?"
-            : "ในกล่องมีอะไร?"}
-        </h1>
-
-        <p
-          className="
             mx-auto
-            mt-2
-            max-w-xl
-            text-sm
-            leading-6
-            text-black/50
-            sm:text-base
+            flex
+            max-w-5xl
+            flex-col
+            items-center
+            gap-4
+            sm:flex-row
+            sm:items-start
+            sm:justify-between
+            sm:gap-6
           "
         >
-          {language === "EN"
-            ? "111 possible items. Most of them are completely unnecessary."
-            : "ของทั้งหมด 111 อย่าง และส่วนใหญ่ไม่มีประโยชน์อะไรเลย"}
-        </p>
+          {/* TITLE BLOCK */}
+
+          <div
+            className="
+              min-w-0
+              flex-1
+              text-center
+              sm:text-left
+            "
+          >
+            <div
+              className="
+                mb-2
+                text-[10px]
+                font-medium
+                tracking-[0.2em]
+                text-black/35
+              "
+            >
+              ARE_ED&nbsp;&nbsp;//&nbsp;&nbsp;RANDOM BOX
+            </div>
+
+            <h1
+              className="
+                text-4xl
+                font-medium
+                tracking-[-0.055em]
+                text-black
+                sm:text-5xl
+                md:text-6xl
+              "
+            >
+              {language === "EN"
+                ? "What's in the Box?"
+                : "ในกล่องมีอะไร?"}
+            </h1>
+
+            <p
+              className="
+                mx-auto
+                mt-2
+                max-w-xl
+                text-sm
+                leading-6
+                text-black/50
+                sm:mx-0
+                sm:text-base
+              "
+            >
+              {language === "EN"
+                ? "111 possible items. Most of them are completely unnecessary."
+                : "ของทั้งหมด 111 อย่าง และส่วนใหญ่ไม่มีประโยชน์อะไรเลย"}
+            </p>
+          </div>
+
+          {/* DROP RATES — beside the title */}
+
+          <div
+            className="
+              flex
+              w-full
+              shrink-0
+              flex-col
+              items-center
+              gap-1.5
+              sm:w-56
+              sm:items-end
+              sm:pt-1
+              md:w-64
+            "
+          >
+            <span
+              className="
+                text-[9px]
+                font-semibold
+                tracking-[0.14em]
+                text-black/55
+              "
+            >
+              {language === "EN"
+                ? "DROP RATE"
+                : "อัตราสุ่ม"}
+            </span>
+
+            <div
+              className="
+                flex
+                flex-wrap
+                items-center
+                justify-center
+                gap-x-2.5
+                gap-y-1
+                text-[9px]
+                font-medium
+                tracking-[0.06em]
+                sm:justify-end
+                sm:text-[10px]
+              "
+            >
+              {RARITY_ORDER.map((rarityName) => (
+                <span
+                  key={rarityName}
+                  className={`
+                    whitespace-nowrap
+                    font-semibold
+                    ${RARITY_STYLES[rarityName].text}
+                  `}
+                >
+                  {RARITY_LABELS[language][rarityName]}{" "}
+                  {dropRates[rarityName] < 1
+                    ? dropRates[rarityName].toFixed(2)
+                    : dropRates[rarityName].toFixed(1)}
+                  %
+                </span>
+              ))}
+            </div>
+
+            <div
+              className="
+                text-center
+                text-[9px]
+                text-black/35
+                sm:text-right
+                sm:text-[10px]
+              "
+            >
+              {pityCount > 0
+                ? language === "EN"
+                  ? `LUCK ×${(
+                      1 + pityCount * 0.08
+                    ).toFixed(2)} · ${pityCount} ${
+                      pityCount === 1 ? "OPEN" : "OPENS"
+                    } SINCE ABSOLUTE`
+                  : `ดวง ×${(
+                      1 + pityCount * 0.08
+                    ).toFixed(2)} · เปิดแล้ว ${pityCount} ครั้งตั้งแต่ได้ ABSOLUTE`
+                : language === "EN"
+                  ? "BASE RATE · ABSOLUTE RESET"
+                  : "เรทปกติ · ได้ ABSOLUTE แล้วรีเซ็ต"}
+            </div>
+          </div>
+        </div>
       </header>
 
       {/* =================================================
@@ -1348,7 +2000,7 @@ export default function WhatsInTheBox({
           box-game-area
           relative
           mt-4
-          min-h-0
+          min-h-[330px]
           flex-1
           overflow-hidden
           border
@@ -1386,26 +2038,47 @@ export default function WhatsInTheBox({
             BOX.EXE
           </span>
 
-          <span
+          <div
             className="
-              text-[9px]
-              font-medium
-              tracking-[0.2em]
-              text-black/35
+              flex
+              items-center
+              gap-3
             "
           >
-            {opening
-              ? language === "EN"
-                ? "OPENING"
-                : "กำลังเปิด"
-              : result
+            <span
+              className="
+                text-[9px]
+                font-medium
+                tracking-[0.14em]
+                text-black/35
+              "
+            >
+              {language === "EN"
+                ? `LUCK ${pityCount}`
+                : `ดวง ${pityCount}`}
+            </span>
+
+            <span
+              className="
+                text-[9px]
+                font-medium
+                tracking-[0.2em]
+                text-black/35
+              "
+            >
+              {opening
                 ? language === "EN"
-                  ? "RESULT"
-                  : "ผลลัพธ์"
-                : language === "EN"
-                  ? "READY"
-                  : "พร้อม"}
-          </span>
+                  ? "OPENING"
+                  : "กำลังเปิด"
+                : result
+                  ? language === "EN"
+                    ? "RESULT"
+                    : "ผลลัพธ์"
+                  : language === "EN"
+                    ? "READY"
+                    : "พร้อม"}
+            </span>
+          </div>
         </div>
 
         {/* =================================================
@@ -1415,10 +2088,17 @@ export default function WhatsInTheBox({
         <div
           className="
             absolute
-            inset-0
+            box-center-stage
+            absolute
+            inset-x-0
+            top-0
+            bottom-[96px]
             flex
+            translate-y-[18px]
             items-center
             justify-center
+            sm:bottom-[104px]
+            sm:translate-y-[22px]
           "
         >
           {/* FLOOR */}
@@ -1553,7 +2233,7 @@ export default function WhatsInTheBox({
                       text-white/20
                     "
                   >
-                    <span>BOX.111</span>
+                    <span>BOX.077</span>
                     <span>RNG</span>
                   </div>
                 </motion.div>
@@ -1716,6 +2396,23 @@ export default function WhatsInTheBox({
                 >
                   {rarityLabel}
                 </div>
+
+                <div
+                  className="
+                    mt-1
+                    text-[8px]
+                    tracking-[0.08em]
+                    text-black/35
+                  "
+                >
+                  {result.rarity === "ABSOLUTE"
+                    ? language === "EN"
+                      ? "MAX RARITY · RATE RESET"
+                      : "หายากสุด · รีเซ็ตเรท"
+                    : language === "EN"
+                      ? `PITY ${pityCount}`
+                      : `สะสมดวง ${pityCount}`}
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
@@ -1732,7 +2429,7 @@ export default function WhatsInTheBox({
           className="
             mini-primary-button
             absolute
-            bottom-5
+            bottom-7
             left-1/2
             z-[90]
             w-[calc(100%-40px)]
@@ -1741,7 +2438,7 @@ export default function WhatsInTheBox({
             py-3.5
             text-sm
             font-medium
-            sm:bottom-6
+            sm:bottom-8
             sm:py-4
           "
         >
@@ -1789,11 +2486,13 @@ export default function WhatsInTheBox({
             className={`
               relative
               mt-3
+              mb-4
               shrink-0
               overflow-hidden
               border
               ${rarity.border}
               ${rarity.background}
+              sm:mb-5
             `}
             style={{
               boxShadow: `0 18px 55px ${rarity.glow}`,

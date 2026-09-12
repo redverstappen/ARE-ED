@@ -504,34 +504,7 @@ body:has(.mini-games-page) {
 
   color: #080808;
 
-  line-height: 1.35;
-
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-/*
-  Thai script stacks vowel/tone marks above and below each
-  consonant. The negative letter-spacing and tight line-height
-  above are fine for English but make Thai marks collide with
-  neighboring characters and with the line above/below —
-  that is the "mud" effect. Thai gets its own spacing here.
-*/
-
-:lang(th) .life-slot-value {
-  letter-spacing: normal;
-  line-height: 1.85;
-  font-size: 14px;
-}
-
-:lang(th) .mini-page-title {
-  letter-spacing: -0.01em;
-  line-height: 1.3;
-}
-
-:lang(th) .mini-readable,
-:lang(th) .mini-micro {
-  letter-spacing: normal;
+  line-height: 1.25;
 }
 
 /* =========================================================
@@ -1020,49 +993,102 @@ body:has(.mini-games-page) {
   }
 }
 
-@media (max-width: 640px) {
-  .mini-games-content:has(.life-generator),
-  .mini-games-content:has(.box-game-area) {
-    height: auto;
-    min-height: 100svh;
-  }
-}
+/* =========================================================
+   MOBILE SCROLL FIX
+   Keep the desktop layout unchanged.
+   On phones, let the Mini Games page grow naturally so the
+   user can scroll to the content below the viewport.
+   ========================================================= */
 
 @media (max-width: 640px) {
+  html:has(.mini-games-page),
+  body:has(.mini-games-page) {
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .mini-games-page {
+    height: auto;
+    min-height: 100svh;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
   .mini-games-content {
     height: auto;
     min-height: 100svh;
+    overflow: visible;
   }
 
+  /* Life Generator: use the natural content height. */
+  .life-generator-mobile {
+    flex: none;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .life-generator-mobile > .grid {
+    height: auto !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 6px;
+  }
+
+  .life-generator-mobile .life-slot {
+    min-height: 115px;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .life-generator-mobile .life-slot-value {
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .life-generator-mobile .mini-result {
+    max-height: none;
+    overflow: visible;
+  }
+
+  /* Box: keep the stage compact, but allow the page to continue below it. */
   .box-game-area {
     flex: none;
     width: 100%;
     height: 380px;
     min-height: 380px;
+    max-height: none;
   }
 }
 
 /* =========================================================
-   LIFE GENERATOR MOBILE FIX
+   REDUCED MOTION
    ========================================================= */
 
-@media (max-width: 640px) {
-  .life-generator-mobile {
-    flex: none;
-    width: 100%;
-    height: 430px;
-    min-height: 430px;
-    overflow: hidden;
+@media (prefers-reduced-motion: reduce) {
+  .mini-game-card,
+  .mini-game-symbol,
+  .mini-game-arrow,
+  .mini-primary-button,
+  .life-slot,
+  .rarity-card {
+    transition: none !important;
   }
+}
 
-  .life-generator-mobile > .grid {
-    height: 54% !important;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-  }
+/* =========================================================
+   BOX GAME — BALANCED CENTER STAGE
+   ========================================================= */
 
-  .life-generator-mobile .life-slot {
-    min-height: 0;
-    height: auto;
-  }
+.box-center-stage {
+  pointer-events: none;
+}
+
+.box-center-stage > * {
+  pointer-events: auto;
 }
